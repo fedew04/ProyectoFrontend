@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contactoStyle.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="./index.html" class="logo">
+                <img src="img/icon.png" alt="Anime Network">
+                <h2 class="website-name">Anime Network</h2>
+            </a>
+
+        </div>
+
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+            <a href="inicioSesion.html" class="nav-link">Iniciar Sesión</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="video/fights_background.mp4" type="video/mp4">
+        </video>
+
+        <div class="container">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Contactanos</h2>
+                    <div class="textDiv" style="position: relative;">
+                        <input type="text" class="field" placeholder="Tu Nombre" id="textInput">
+                        <img src="img/exclamation.png" id="textAlert" class="emptyFieldImage"
+                            alt="Debes completar este campo">
+                    </div>
+                    <div class="emailDiv" style="position: relative;">
+                        <input type="text" class="field" placeholder="Tu Correo" id="emailInput">
+                        <img src="img/exclamation.png" id="emailAlert" class="emptyFieldImage"
+                            alt="Debes completar este campo">
+                    </div>
+                    <div class="phoneDiv" style="position: relative;">
+                        <input type="text" class="field" placeholder="Tu Celular" id="phoneInput">
+                        <img src="img/exclamation.png" id="phoneAlert" class="emptyFieldImage"
+                            alt="Debes completar este campo">
+                    </div>
+                    <div class="captchaDiv" style="position: relative;">
+                        <input type="checkbox" id="captcha">
+                        <label for="captcha">No soy un robot</label><br>
+                        <img src="img/exclamation.png" id="captchaAlert" style="bottom: 18px;" class="emptyFieldImage"
+                            alt="Debes completar este campo">
+                    </div>
+
+                    <label for="paises">Elige tu país:</label>
+                    <select name="paises" id="paises">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+
+                    <textarea placeholder="Mensaje" class="field" id="mensajeInput"></textarea>
+                    <img src="img/exclamation.png" id="messageAlert" class="emptyFieldImage" style="bottom: 230px;"
+                        alt="Debes completar este campo">
+
+                    <button class="btn" id="btnSendContact">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scriptContacto.js"></script>
+
+</body>
+
+</html>

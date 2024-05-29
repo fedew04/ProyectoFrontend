@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="./index.html" class="logo">
+                <img src="img/icon.png" alt="Anime Network">
+                <h2 class="website-name">Anime Network</h2>
+            </a>
+
+        </div>
+
+
+
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+            <a href="inicioSesion.html" class="nav-link">Iniciar Sesión</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="video/fights_background.mp4" type="video/mp4">
+        </video>
+
+        <div class="login">
+            <h2>Iniciar Sesion</h2>
+            <form class="loginForm">
+                <label for="username">Nombre de usuario:</label><br>
+                <input type="text" id="loginUsername" name="username"><br>
+                <label for="pass">Contraseña:</label><br>
+                <input type="password" id="loginPass" name="pass">
+            </form>
+
+            <button id="btnIngresar">Ingresar</button>
+            <a href="./registrarse.html">
+                <button class="btnRegistrarse">Registrarse</button>
+            </a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
